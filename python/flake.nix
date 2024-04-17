@@ -20,6 +20,10 @@
             pythonEnv
             # Add more build inputs here as needed
           ];
+	  
+	  shellHool = ''
+	    export PS1="nix-shell:\w$ "
+	  '';
         };
       }
     );
